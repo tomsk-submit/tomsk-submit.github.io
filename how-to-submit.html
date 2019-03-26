@@ -24,10 +24,10 @@
       <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">Tomsk</div>
         <div class="list-group list-group-flush">
-          <a href="#" class="list-group-item list-group-item-action bg-light"
+          <a href="/index.html" class="list-group-item list-group-item-action bg-light"
             >Exercises</a
           >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
+          <a href="/how-to-submit.html" class="list-group-item list-group-item-action bg-light"
             >How to Submit</a
           >
         </div>
@@ -54,19 +54,32 @@
           </button>
         </nav>
         <div class="container-fluid">
-          <h1 class="mt-4">Simple Sidebar</h1>
+          <h1 class="mt-4">Submit</h1>
           <p>
-            The starting state of the menu will appear collapsed on smaller
-            screens, and will appear non-collapsed on larger screens. When
-            toggled using the button below, the menu will change.
+            Be sure to be sure to be a member of tomsk-submit organization on
+            Github.
           </p>
           <p>
-            Make sure to keep all page content within the
-            <code>#page-content-wrapper</code>. The top navbar is optional, and
-            just for demonstration. Just create an element with the
-            <code>#menu-toggle</code> ID which will toggle the menu when
-            clicked.
+            After that, you can either install the script or use it through
+            docker.
           </p>
+          <p>
+            If you opt to install it, should make sure to have python3
+            installed. Then download the code
+            <a href="https://github.com/flaviobarci/ptom/archive/master.zip"
+              >here</a
+            >, and install it: <code>sudo python3 setup.py install</code>
+          </p>
+          <p>
+            After that process is done, just run: <code> ptom fileName </code>
+          </p>
+        </br>
+        <p>
+            Other option is to pull the docker image, and run it:</br></br>
+            <code>docker pull barci/ptom:latest</code>
+        </br>
+            <code>docker run -ti --rm --volume $(pwd):/submit --workdir /submit ptomi fileName</code>
+        </p>
         </div>
       </div>
       <!-- /#page-content-wrapper -->
