@@ -10,10 +10,8 @@
     <meta name="author" content="" />
 
     <title>Tomsk Submit</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet" />
   </head>
@@ -63,6 +61,7 @@
             After that, you can either install the script or use it through
             docker.
           </p>
+          <h3>Install</h3>
           <p>
             If you opt to install it, should make sure to have python3
             installed. Then download the code
@@ -71,14 +70,15 @@
             >, and install it: <code>sudo python3 setup.py install</code>
           </p>
           <p>
-            After that process is done, just run: <code> ptom fileName </code>
+            After that process is done, just run: <code> ptom exerciseName </code>
           </p>
         </br>
+        <h3>Docker</h3>
         <p>
             Other option is to pull the docker image, and run it:</br></br>
             <code>docker pull barci/ptom:latest</code>
         </br>
-            <code>docker run -ti --rm --volume $(pwd):/submit --workdir /submit ptomi fileName</code>
+            <code>docker run -ti --rm --volume $(pwd):/submit --workdir /submit ptomi exerciseName</code>
         </p>
         </div>
       </div>
